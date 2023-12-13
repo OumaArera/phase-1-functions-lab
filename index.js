@@ -11,7 +11,7 @@ function distanceTravelledInFeet (start, destination) {
 }
 function calculatesFarePrice(start, destination) {
     const distance = Math.abs(destination-start) * 264;
-    if (distance >= 2500){
+    if (distance > 2500){
         return "cannot travel that far";
 
     }else if (distance > 2000){
